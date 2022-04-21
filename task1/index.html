@@ -13,21 +13,21 @@
         Background color:  <span class="color"></span>
     </h1> 
       
-    <p id = "GFG_UP" style =
+    <p id = "text1" style =
         "font-size: 16px; font-weight: bold;">     
     </p>
       
-    <button onclick = "gfg_Run()"> 
+    <button onclick = "Run()"> 
         Click Me!
     </button>
       
-    <p id = "GFG_DOWN" style =
+    <p id = "text2" style =
         "color:black; font-size: 20px; font-weight: bold;">
     </p>
       
     <script>
-        var el_up = document.getElementById("GFG_UP");
-        var el_down = document.getElementById("GFG_DOWN");
+        var el_up = document.getElementById("text1");
+        var el_down = document.getElementById("text2");
       
         el_up.innerHTML = str;
       
@@ -35,7 +35,7 @@
             document.body.style.background = color;
         }
           
-        function gfg_Run() {
+        function Run() {
             changeColor('Red');
             el_down.innerHTML = "Background Color changed";
         }         
