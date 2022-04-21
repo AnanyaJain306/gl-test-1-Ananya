@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task1</title>
+</head>
+
+<body style = "text-align:center;">
+           
+    <h1 style = "color:black;" > 
+        Background color:  <span class="color"></span>
+    </h1> 
+      
+    <p id = "GFG_UP" style =
+        "font-size: 16px; font-weight: bold;">     
+    </p>
+      
+    <button onclick = "gfg_Run()"> 
+        Click Me!
+    </button>
+      
+    <p id = "GFG_DOWN" style =
+        "color:black; font-size: 20px; font-weight: bold;">
+    </p>
+      
+    <script>
+        var el_up = document.getElementById("GFG_UP");
+        var el_down = document.getElementById("GFG_DOWN");
+      
+        el_up.innerHTML = str;
+      
+        function changeColor(color) {
+            document.body.style.background = color;
+        }
+          
+        function gfg_Run() {
+            changeColor('Red');
+            el_down.innerHTML = "Background Color changed";
+        }         
+    </script> 
+</body> 
+</html>
